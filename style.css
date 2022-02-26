@@ -23,7 +23,7 @@ body {
 
 .sidebar-main {
     display: flex;
-    height: 60%;
+    height: 70%;
     align-items: center;
     padding: 0.5em;
     background-color: grey;
@@ -39,7 +39,7 @@ body {
 
 .sidebar-contents {
     list-style: none;
-    padding: 2em 0;
+    padding: 4vh 0;
     
 }
 
