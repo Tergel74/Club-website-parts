@@ -1,0 +1,158 @@
+
+html {
+
+    height: 100%;
+}
+h1,h2,h3 {
+    margin: 0;
+}
+body {
+
+    font-family: 'Smooch Sans', sans-serif;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(249,245,245,1) 59%, rgba(190,193,194,1) 100%);
+}
+.bc {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+
+    z-index: -1;
+}
+
+nav {
+    margin: 2.5% 2.5% 0 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+
+.nav-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    flex-wrap: wrap;
+
+
+}
+nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
+    margin: 5px 10px;
+    height: 25px;
+    width: 100px;
+    text-decoration: none;
+    color: #696969;
+    transition: 0.2s;
+    border-radius: 5px;
+
+
+}
+
+.li-home {
+    background-color: rgb(39, 185, 161);
+    color: white;
+    border-radius: 5px;
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.nav-el :hover  {
+    background-color: rgb(39, 185, 161);
+    color: white;
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    width: fit-content;
+    max-width: 600px;
+    font-size: 1.5em;
+
+}
+
+
+.text h1 {
+    letter-spacing: 1px;
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.podtext {
+    font-weight: bold;
+}
+
+.text a {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: rgb(39, 185, 161);
+    border-radius: 25px;
+    border: 0;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 1.2em;
+
+
+}
+
+::selection {
+    color: rgb(32, 250, 214);
+    background: rgb(214, 213, 213);
+  }
+
+@media (max-width:1500px) {
+    body {
+        display: flex;
+
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bc {
+        align-items: center;
+        position: relative;
+        width: 500px;
+        height: 500px;
+        left: 0;
+        margin: 50px 0;
+
+    }
+    .text {
+        position:relative;
+        width: fit-content;
+        right: 0;
+        text-align: center;
+
+    }
+
+    .text h1 {
+        font-size: 2.5em;
+    }
+
+   .text a {
+        padding: 2px 35px;
+        width: fit-content;
+        margin: 50px auto;
+    
+   }
+
+  
+}
+
+
+
