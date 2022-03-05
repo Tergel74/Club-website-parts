@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Work+Sans&display=swap"
         rel="stylesheet">
-
     <title>Techne</title>
 </head>
 
@@ -53,40 +52,21 @@
     </aside>
 
     <main class="chat">
-        <div class="messages-chat">
-            <div class="message">
-                <div class="photo" style="background-image: url(https://picsum.photos/200);">
-                    <div class="online"></div>
-                </div>
-                <p class="text"> Lorem ipsum dolor sit amet consectetur. </p>
-            </div>
-            <div class="message text-only">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat alias ullam sunt.</p>
-            </div>
-            <p class="time"> 14h58</p>
-            <div class="message text-only">
-                <div class="response">
-                    <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div class="message text-only">
-                <div class="response">
-                    <p class="text"> Lorem ipsum dolor sit.</p>
-                </div>
-            </div>
-            <p class="response-time time"> 15h04</p>
-            <div class="message">
-                <div class="photo" style="background-image: url(https://picsum.photos/200);">
-                    <div class="online"></div>
-                </div>
-                <p class="text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor!</p>
-            </div>
-            <p class="time"> 15h09</p>
+        <div class="message-footer">
+            <form class="message-form">
+                <input type="text" class="typed-message" placeholder="Type Your Message...">
+                <button class="submit" type="submit">
+                    Send
+                </button>
+            </form>
         </div>
-        <div class="footer-chat">
-            <input type="text" class="write-message" placeholder="Type your message here"></input>
-        </div>
+
+
+        <div class="messages"></div>
+
     </main>
+
+    <script src="chat.js"></script>
 
 </body>
 
