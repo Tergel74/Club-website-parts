@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #161c2d;
+    display: grid;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    padding: 0.25rem 0.25rem;
+    float: left;
+}
+
+.heading-text {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 5vw;
+    color: #161c2de3;
+    border: 2px solid rgb(94,111,203);
+    width: 45%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-62.5%);
+}
+
+
+.project {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(94,111,203);
+    border-radius: 20px;
+    background-color: rgba(94,111,203,0.2);
+    padding: 1.5em;
+    margin: 4.5vw 7.5vw;
+}
+
+
+
+.christmas-tree {
+    flex-flow: row;
+}
+
+.firework {
+    flex-flow: row;
+}
+
+
+.main-text {
+    font-size: 2vw;
+    font-family: 'Roboto';
+    /*
+    border: 2px solid rgb(94,111,203);
+    border-radius: 20px;
+    background-color: rgba(94,111,203,0.2);
+    width: 50vw;*/
+    padding: 0em 1em;
+}
+
+
+
+line {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-bottom: 1px solid #000;
+    display: block;
+}
+
+@media only screen and (max-width: 410) {
+    #logo {
+        width: 40px;
+        height: 40px;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+}
